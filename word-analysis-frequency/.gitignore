@@ -1,0 +1,67 @@
+# ==========================================
+# 1. DỮ LIỆU (QUAN TRỌNG NHẤT)
+# ==========================================
+# Không bao giờ đẩy file dữ liệu thô từ Kaggle lên GitHub
+data/
+*.json
+*.csv
+*.zip
+*.tar.gz
+*.pdf
+
+# Nếu bạn để dữ liệu trong thư mục con, hãy bỏ qua cả thư mục đó
+raw_data/
+processed_data/
+
+# ==========================================
+# 2. PYTHON & MÔI TRƯỜNG ẢO
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+venv/
+env/
+.venv/
+.python-version
+
+# ==========================================
+# 3. JUPYTER NOTEBOOK
+# ==========================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Loại bỏ các file tạm của các thư viện lớn
+.pylintrc
+.pytest_cache/
+
+# ==========================================
+# 4. MACOS SPECIFIC (Hệ điều hành)
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# ==========================================
+# 5. KẾT QUẢ PHÂN TÍCH & MODEL
+# ==========================================
+# Các file model nặng (h5, pkl, pth) sau khi huấn luyện
+models/
+*.h5
+*.pkl
+*.pth
+*.joblib
+
+# Output hình ảnh/báo cáo nặng
+figures/
+reports/*.pdf
+reports/*.html
+
+# ==========================================
+# 6. KAGGLE API & LOGS
+# ==========================================
+.kaggle/
+kaggle.json
+*.log
